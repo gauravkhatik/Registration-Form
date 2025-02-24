@@ -7,7 +7,8 @@
 </head>
 <body>
     <fieldset>
-        <legend>Sign Up Form</legend>
+        <legend>Register Form</legend>
+        <br>
         <form>
             <label for="name1">Enter Your Name :- </label>
             <input type="text" id="name1" placeholder="Full Name">
@@ -26,11 +27,12 @@
             <br/><br/>
 
             <label for="gen1">Select Your Gender :- </label>
-            <label for="gen1"><input type="radio" id="gen1">Male</label>
-            <label for="gen1"><input type="radio" id="gen1">Female</label>
+            <select name="gen1" id="gen1">
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+            </select>
             <br/><br/>
-        
-
 
             <label for="skill">Enter Your Skill :- </label>
             <label for="cpp">C++</label>
@@ -44,8 +46,22 @@
             <label for="pass1">Enter Your Password:- </label>
             <input type="pass" id="pass1" placeholder="Password">
             <br/><br/>
+            
+            <label for="f1">Upload Your Resume</label>
+            <input type="file" id="f1">
+            <br/><br/>
 
-            <button value="Submit">Submit</button>
+            <label for="ex1">Experience :- </label>
+            <input type="number" id="ex1" min="0" max="10">
+            <br/><br/>
+
+
+            <label for="des">Enter Your Bio </label>
+            <br/><br>
+            <textarea name="text1" id="des" placeholder="Enter Your Info"></textarea>
+            <br/><br/>
+
+            <button value="Submit">Register </button>
             <button>Reset</button>
 
 
